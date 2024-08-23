@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="container-left">
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/xsqjakgm.json" trigger="loop" delay="1100" state="in-unfold"
+                colors="primary:#110a5c,secondary:#4030e8" style="width:150px;height:150px;" >
+            </lord-icon>
+            <h1>Registration Form</h1>
+        </div>
+        <div class="container-right">
+            <form id="validationCheck" action="" method="post" >
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email :</label>
+                <input type="email" name="email" required>
+                <label for="number">Contact No</label>
+                <input type="number"  name="number"   id="phonenumber" onchange="validatePhoneNumber()" required>
+                <div id="phoneValidationMsg"></div>
+                <label for="Branch">Branch :</label>
+                <select name="Branch" id="Branch" required>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="ELEC">ELEC</option>
+                    <option value="AIML">AIML</option>
+                    <option value="CSDS">CSDS</option>
+                    <option value="CSBS">CSBS</option>
+                </select>
+                <label for="year">Year :</label>
+                <select name="year" id="year" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <label for="college">College :</label>
+                <input type="text" name="college" id="college" required>
+                <label for="linkedin">Linked-In :</label>
+                <input type="text" name="linkedin" id="linkedin">
+                <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
