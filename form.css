@@ -95,6 +95,11 @@ form button:hover{
     font-size: 14px;
     margin-top: 5px;
 }
+#nameValidationMsg{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
 
 @media (max-width: 580px) {
     .maincontainer{

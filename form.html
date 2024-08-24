@@ -20,9 +20,12 @@
         <div class="container-right">
             <form id="validationCheck" action="" method="post" >
                 <label for="name">Name :</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" onchange="validateName()" required>
+                <div id="nameValidationMsg"></div>
+                <span id="name-error" class="error-message"></span>
                 <label for="email">Email :</label>
-                <input type="email" name="email" required>
+                <input type="email" name="email" id="email" required>
+                <div id="emailValidationMsg"></div>
                 <label for="number">Contact No</label>
                 <input type="number"  name="number"   id="phonenumber" onchange="validatePhoneNumber()" required>
                 <div id="phoneValidationMsg"></div>
